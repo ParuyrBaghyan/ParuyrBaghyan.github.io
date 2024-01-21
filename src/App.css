@@ -1,0 +1,41 @@
+@import 'modules/CSS/Header.css';
+@import 'modules/CSS/AboutMe.css';
+@import 'modules/CSS/GitHub.css';
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    color: white;
+}
+
+.app-center-div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.App video{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.clear-place{
+    height: 10vh;
+}

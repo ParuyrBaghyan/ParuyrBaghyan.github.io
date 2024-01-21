@@ -1,0 +1,30 @@
+@import '/src/components/CSS/GitBtn.css';
+
+.GitHub-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 15vh;
+}
+
+
+.GitHub-container h2 {
+    font-size: 35px;
+    font-family: system-ui;
+}
+
+.GitHub-container>div>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+@media (max-width: 480px) {
+
+    .GitHub-container>div>div {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+}

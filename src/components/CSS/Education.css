@@ -1,0 +1,108 @@
+* {
+    font-family: system-ui;
+}
+
+
+.Education-container {
+    margin-top: 10vh;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem;
+}
+
+.Education-container h3 {
+    font-size: 25px;
+}
+
+.Education-container>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 40vh;
+    gap: 2rem;
+
+}
+
+
+.Education-container .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #1fa1b8;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  }
+
+  .Education-container .card:nth-child(1){
+    background: url(/public/img/112.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .Education-container .card:nth-child(2){
+    background: url(/public/img/npua.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .Education-container .card svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .Education-container .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .Education-container .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .Education-container .card:hover svg {
+    scale: 0;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+  
+
+  @media (max-width: 480px) {
+
+    .Education-container>div {
+      grid-template-columns: 1fr;
+      height: 60vh;
+    }
+
+  }
